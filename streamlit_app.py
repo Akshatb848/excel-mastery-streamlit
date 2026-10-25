@@ -29,8 +29,10 @@ st.markdown(
       footer, #MainMenu {visibility: hidden; height: 0;}
       .stAppDeployButton, [data-testid="stToolbarActions"], [data-testid="stMainMenu"], [data-testid="stDecoration"], [data-testid="stStatusWidget"] {display: none !important;}
       [data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"] {
-        position: fixed !important; left: 14px; bottom: 92px; top: auto !important; z-index: 1000;
-        background: #0e7a4a; color: #fff; border-radius: 999px; box-shadow: 0 6px 18px -6px rgba(0,0,0,.45);}
+        position: fixed !important; right: 0; left: auto !important; top: 42% !important; bottom: auto; z-index: 1000;
+        background: #0e7a4a; color: #fff; border-radius: 10px 0 0 10px; padding: 6px 4px; opacity: .85;
+        box-shadow: 0 6px 18px -6px rgba(0,0,0,.45);}
+      [data-testid="stExpandSidebarButton"]:hover {opacity: 1;}
       [data-testid="stExpandSidebarButton"] svg, [data-testid="stSidebarCollapsedControl"] svg {color: #fff; fill: #fff;}
       .block-container {padding: 0 !important; max-width: 100% !important;}
       [data-testid="stAppViewContainer"] > .main {padding: 0;}
